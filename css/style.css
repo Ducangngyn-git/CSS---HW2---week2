@@ -1,5 +1,5 @@
 body {
-    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: Arial, sans-serif;
     font-size: 100%;
     background-color: #f2f5f3;
     color: #2d3748;
@@ -12,7 +12,14 @@ header {
     background-color: #e2ece9;
     padding: 25px 20px;
     border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+h1 {
+    color: #1b4332;
+}
+
+h2 {
+    color: #2d6a4f;
 }
 
 nav {
@@ -21,22 +28,14 @@ nav {
     border-radius: 8px;
     margin: 15px 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+    display: inline-block;
+    width: 80%;
 }
 
-main {
-    background-color: #ffffff;
-    font-size: 17px;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-}
-
-footer {
-    background-color: #2d6a4f;
-    padding: 18px 20px;
-    border-radius: 8px;
-    margin-top: 25px;
-    text-align: center;
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 li {
@@ -45,39 +44,48 @@ li {
     text-align: center;
 }
 
-h1 {
-    text-align: center;
-    font-family: 'Georgia', 'Segoe UI', serif;
-    color: #081c15;
-    margin: 0;
-    font-size: 2.2rem;
-    letter-spacing: 0.5px;
-}
-
-p {
-    line-height: 1.8;
-    margin-bottom: 16px;
-}
-
 nav a {
-    color: #ffffff !important;
+    color: white;
     text-decoration: none;
-    font-weight: 600;
-    font-size: 15px;
 }
 
 nav a:hover {
-    color: #b7e4c7 !important;
-}
-
-main a {
-    color: #2d6a4f;
-    font-weight: 600;
     text-decoration: underline;
 }
 
-footer p {
-    color: #e2ece9;
-    margin: 0;
-    font-size: 14px;
+nav img {
+    width: 10%;
+}
+
+main {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+}
+
+.grid img {
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: #1b4332;
+}
+
+a[href="#main-content"] {
+    display: inline-block;
+    margin: 10px 0;
 }
